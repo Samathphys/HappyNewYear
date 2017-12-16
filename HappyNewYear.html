@@ -25,17 +25,31 @@
         font-size: 200px;
         line-height: 1;
         font-family: 'Rajdhani', sans-serif;
-        background: -webkit-linear-gradient(transparent, transparent),        url(ooo.jpg) repeat;
+        background: -webkit-linear-gradient(transparent, transparent),        url(ki.png) repeat;
         background-size: 200px auto;
         -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
             animation: background 10s infinite linear;
             }
         </style>
+        
+        
     </head>
     <body>
         <h1 class="a1">С Новым Годом !</h1>
         <a href="a.html"><img src="ooo.jpg"></a>
+        <p>Привет!</p>
         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+            $(document).ready ( function () {
+                $("p").css({position: "relative", left: 0, top: 0})
+                    .animate({left: "+=200", top: "+=200"}, 5000)
+                    //.animate({top: "+=200"}, 5000)
+                    .animate({left: "-=200"}, 5000)
+                    .animate({top: "-=200"}, 5000);
+            });
+
+        </script>
     </body>
 </html>
